@@ -259,6 +259,9 @@
                   },
                   {
                      "name": "Generic RP2040"
+                  },
+                  {
+                     "name": "Longan Labs Canbed 2040"
                   }
                ],
                "toolsDependencies": [

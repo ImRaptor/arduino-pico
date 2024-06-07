@@ -521,6 +521,9 @@ MakeBoard("wiznet_5500_evb_pico", "WIZnet", "W5500-EVB-Pico", "0x2e8a", "0x1029"
 # Generic
 MakeBoard("generic", "Generic", "RP2040", "0x2e8a", "0xf00a", 250, "GENERIC_RP2040", 16, "boot2_generic_03h_4_padded_checksum")
 
+# Longan 
+MakeBoard("longan_canbed_2040", "Longan Labs", "Canbed 2040", "0x2e8a", "0x000a", 250, "LONGAN_CANBED_2040", 2, "boot2_w25q080_2_padded_checksum")
+
 sys.stdout.close()
 with open(os.path.abspath(os.path.dirname(__file__)) + '/../package/package_pico_index.template.json', 'w') as f:
     f.write(json.dumps(pkgjson, indent=3))
